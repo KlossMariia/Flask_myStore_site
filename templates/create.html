@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Add an item </title>
+{% endblock %}
+
+{% block body %}
+    <div class='container'>
+        <h1>Add an item</h1>
+        <form method='POST'>
+            <input type='text' class='form-control' name='title' id='title' placeholder='Input the name'><br>
+            <input type='number' class='form-control' name='price' id='price' placeholder='Input the price ($)'><br>
+            <input type='text' class='form-control' name='description' id='description' placeholder='Describe the product'><br>
+            <button class='btn btn-success' name='Add' type='submit'>Add an item</button>
+            
+        </form>
+    </div>
+{% endblock %}

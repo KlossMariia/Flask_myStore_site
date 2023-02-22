@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> About Web-Site </title>
+{% endblock %}
+
+{% block body %}
+    <h2> About Web-Site </h2><br>
+
+    <dl class="row">
+        <dt class="col-sm-3 blue-color-text"><h4>How to use this website</h4></dt>
+        <dd class="col-sm-9">This website allows to add items for selling and buy already placed items. You can add an item for it to be sold on the page 'Add an item'. An item also can be deleted on the page 'Delete an item'. This website also has plugged "Fondy" payment system (Test payment).</dd>
+      
+        <dt class="col-sm-3 blue-color-text"><h4>How it works</h4></dt>
+        <dd class="col-sm-9">
+          <p>This web-site is written by using Flask framework. User can add or delete items from the Sqlite database (created with SQLAlchemy), then records would show on the main page. Also Jinja Template is used in HTML pages.</p>
+        </dd>
+      
+    {% endblock %}

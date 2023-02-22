@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Delete an item </title>
+{% endblock %}
+
+{% block body %}
+    <div class='container'>
+        <h1>Delete an item</h1>
+        <form method='POST'>
+            <input type='number' class='form-control' name='pk' id='pk' placeholder='Input the product number'><br>
+            <button class='btn btn-success' name='Add' type='submit'>Delete an item</button>
+        </form>
+    </div>
+{% endblock %}
